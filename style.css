@@ -1,0 +1,119 @@
+body {
+  display: grid;
+  justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  gap: 2rem;
+  margin: 0px;
+  margin-top: 3rem;
+}
+main {
+  position: relative;
+}
+main::before {
+  content: "";
+  width: 3rem;
+  height: 4px;
+  background: red;
+  position: absolute;
+  justify-self: center;
+  top: 3rem;
+}
+
+header {
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h4 {
+  margin: 0px;
+}
+.titulo {
+  padding: 2rem;
+  display: block;
+}
+h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2rem;
+  color: rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
+.navegar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.navegar li a {
+  text-decoration: none;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 4px;
+  color: black;
+}
+.conteudo {
+  display: grid;
+  text-align: right;
+  padding: 2rem;
+  background: #fff;
+  align-content: center;
+  justify-items: end;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.button {
+  background: red;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+a:hover {
+  background: white;
+  border: 2px solid red;
+  color: red;
+}
+.vantagem {
+  background: #fff;
+
+  list-style: none;
+  margin: 0px;
+  padding: 2rem;
+}
+.vantagem-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  padding: 20px;
+}
+.vantagem-item:hover {
+  border-left: 0.25rem red solid;
+}
+.vantagem-item p {
+  grid-column: 2;
+}
+li:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.rodape {
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2rem;
+}
+.subtitulo {
+  background-image: url(img/onda.svg);
+}
