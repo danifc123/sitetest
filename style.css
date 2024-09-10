@@ -3,6 +3,16 @@
   --fundo-1: #f7f7f7;
   --fundo-2: #ffffff;
   --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+  }
 }
 
 body {
@@ -13,6 +23,7 @@ body {
   gap: 2rem;
   margin: 0px;
   margin-top: 3rem;
+  color: var(--texto);
 }
 main {
   position: relative;
@@ -46,7 +57,7 @@ h3 {
   text-transform: uppercase;
   text-align: right;
   padding: 2rem;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   align-self: center;
 }
 .navegar {
