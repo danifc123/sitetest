@@ -1,8 +1,15 @@
+:root {
+  --cor-primaria: red;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+}
+
 body {
   display: grid;
   justify-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   gap: 2rem;
   margin: 0px;
   margin-top: 3rem;
@@ -14,7 +21,7 @@ main::before {
   content: "";
   width: 3rem;
   height: 4px;
-  background: red;
+  background: var(--cor-primaria);
   position: absolute;
   justify-self: center;
   top: 3rem;
@@ -53,15 +60,15 @@ h3 {
 .navegar li a {
   text-decoration: none;
   padding: 1rem;
-  background: #fff;
+  background: var(--fundo-2);
   border-radius: 4px;
-  color: black;
+  color: var(--texto);
 }
 .conteudo {
   display: grid;
   text-align: right;
   padding: 2rem;
-  background: #fff;
+  background: var(--fundo-2);
   align-content: center;
   justify-items: end;
 }
@@ -72,20 +79,20 @@ main {
 }
 
 .button {
-  background: red;
+  background: var(--cor-primaria);
   text-decoration: none;
-  color: #fff;
+  color: var(--fundo-2);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 a:hover {
-  background: white;
-  border: 2px solid red;
-  color: red;
+  background: var(--fundo-2);
+  border: 2px solid var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 .vantagem {
-  background: #fff;
+  background: var(--fundo-2);
 
   list-style: none;
   margin: 0px;
@@ -98,17 +105,17 @@ a:hover {
   padding: 20px;
 }
 .vantagem-item:hover {
-  border-left: 0.25rem red solid;
+  border-left: 0.25rem var(--cor-primaria) solid;
 }
 .vantagem-item p {
   grid-column: 2;
 }
 li:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--fundo-1);
 }
 
 .rodape {
-  background: #fff;
+  background: var(--fundo-2);
   width: 100%;
   box-sizing: border-box;
   text-align: center;
